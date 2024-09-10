@@ -17,7 +17,7 @@ The installation should take about 10 minutes.
 ## Demo
 We have included some toy data in the ./Onset of Labor/data/ folder to show the expected structure of data for the onset of labor experiments. The EHR data are direct extracts of OMOP tables. The toy data will work with our code, though the results won't be particularly meaningful as the data are randomly generated. You can replace the toy data with your own data from OMOP tables and your own tabular omics data to run COMET on your own datasets. To run the data processing scripts, run the Jupyter notebooks in ./Onset of Labor/, starting with process_EHR_data_full_PT_cohort.ipynb, then process_EHR_data_omics_cohort.ipynb, lastly, process_EHR_data_omics_cohort_with_PT_word2vec.ipynb. These notebooks will create the processed EHR data files expected by the experiments.ipynb notebook, which you can run after the data processing notebooks.
 
-The data processing notebooks will take <1 minute on our toy data, but substantially longer with real, larger datasets. The experiments notebook will take about 20 minutes to run with our toy data, but substantially longer with real, larger datasets.
+The data processing notebooks will take <1 minute on our toy data, but substantially longer with real, larger datasets. The experiments notebook will take about 20 minutes to run with our toy data on machines with a GPU, but substantially longer with real, larger datasets (or if you do not have a GPU).
 
 
 ## General Repo Organization
