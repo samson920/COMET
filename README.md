@@ -15,7 +15,7 @@ conda activate COMET
 The notebooks are ready to run!
 
 ## Demo
-We have included some toy data in the ./Onset of Labor/data/raw_data folder to show the expected structure of data for the onset of labor experiments. This toy data will work with our code, though the results won't be particularly meaningful as the data are randomly generated. To run the data processing scripts, run the Jupyter notebooks in ./Onset of Labor/, starting with process_EHR_data_full_PT_cohort.ipynb, then process_EHR_data_omics_cohort.ipynb, lastly, process_EHR_data_omics_cohort_with_PT_word2vec.ipynb. These notebooks will create the processed EHR data files expected by the experiments.ipynb notebook, which you can run after the data processing notebooks.
+We have included some toy data in the ./Onset of Labor/data/ folder to show the expected structure of data for the onset of labor experiments. The EHR data are direct extracts of OMOP tables. The toy data will work with our code, though the results won't be particularly meaningful as the data are randomly generated. You can replace the toy data with your own data from OMOP tables and your own tabular omics data to run COMET on your own datasets. To run the data processing scripts, run the Jupyter notebooks in ./Onset of Labor/, starting with process_EHR_data_full_PT_cohort.ipynb, then process_EHR_data_omics_cohort.ipynb, lastly, process_EHR_data_omics_cohort_with_PT_word2vec.ipynb. These notebooks will create the processed EHR data files expected by the experiments.ipynb notebook, which you can run after the data processing notebooks.
 
 
 ## General Repo Organization
