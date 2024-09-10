@@ -2,10 +2,27 @@
 COMET is a machine learning framework that incorporates large, observational electronic health record (EHR) databases and transfer learning to improve the analysis of small datasets from omics studies.
 ## Overview
 This repo contains the code used for the analyses and results presented in our manuscript. Due to HIPAA constraints, we cannot share the EHR data used in our study. The proteomics data for the onset of labor cohort can be found [here](https://datadryad.org/stash/dataset/doi:10.5061/dryad.280gb5mpd). Due to UK Biobank policies, we cannot share the proteomics data from the UK Biobank cohort.
-## Repo Organization
+## Installation and Setup
+First, clone the GitHub repo:
+```
+git clone https://github.com/samson920/COMET
+```
+Then, set up the environment:
+```
+conda env create -f environment.yml
+conda activate COMET
+```
+The notebooks are ready to run!
+
+## Demo
+We have included some toy data in the ./Onset of Labor/data/raw_data folder to show the expected structure of data for the onset of labor experiments. This toy data will work with our code, though the results won't be particularly meaningful as the data are randomly generated. To run the data processing scripts, run the Jupyter notebooks in ./Onset of Labor/, starting with process_EHR_data_full_PT_cohort.ipynb, then process_EHR_data_omics_cohort.ipynb, lastly, process_EHR_data_omics_cohort_with_PT_word2vec.ipynb. These notebooks will create the processed EHR data files expected by the experiments.ipynb notebook, which you can run after the data processing notebooks.
+
+
+## General Repo Organization
 There are two folders: Onset of Labor and Cancer. Within each folder, we have Jupyter notebooks used for various aspects of the data processing and analysis. Within the onset of labor folder we have:
 - process_EHR_data_full_PT_cohort.ipynb: This notebook contains the code necessary to process EHR data for the pre-training cohort from extracts of OMOP tables to matrices that can be direct inputs to the ML models. This includes the training of the word2vec model to embed EHR codes.
 - process_EHR_data_omics_cohort.ipynb: This notebook contains the code necessary to process EHR data for the omics from extracts of OMOP tables to matrices that can be direct inputs to the ML models. This includes the training of the word2vec model to embed EHR codes.
+- process_EHR_data_omics_cohort_with_PT_word2vec.ipynb: This notebook is the same as the above, except it uses the word2vec model from the PT cohort, and is for use in the latter experiments which utilize COMET (including the pre-trained word2vec model).
 - experiments.ipynb: This notebook contains all other code for experiments and analysis. Most notably, it contains the code for the actual architecture of our models, hyperparameter optimization, actual experiments, and downstream analyses including feature importance computation and visualization of the parameter space in Figure 6.
 
 Within the cancer folder we have:
