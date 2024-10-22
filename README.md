@@ -1,7 +1,7 @@
 # COMET: Clinical and Omics Multi-Modal Analysis Enhanced with Transfer Learning
 COMET is a machine learning framework that incorporates large, observational electronic health record (EHR) databases and transfer learning to improve the analysis of small datasets from omics studies.
 ## Overview
-This repo contains the code used for the analyses and results presented in our manuscript. Due to HIPAA constraints, we cannot share the EHR data used in our study. The proteomics data for the onset of labor cohort can be found [here](https://datadryad.org/stash/dataset/doi:10.5061/dryad.280gb5mpd). Due to UK Biobank policies, we cannot share the proteomics data from the UK Biobank cohort. Researchers who have access to the UK Biobank proteomics data and EHR data can run the provided notebooks to reproduce our analysis.
+This repo contains the code used for the analyses and results presented in our manuscript. Due to HIPAA constraints, we cannot share the EHR data used in our study. The proteomics data for the onset of labor cohort can be found [here](https://datadryad.org/stash/dataset/doi:10.5061/dryad.280gb5mpd). Due to UK Biobank policies, we cannot share the proteomics data from the UK Biobank cohort. Researchers who have access to the UK Biobank proteomics data and EHR data can run the provided notebooks from the UK Biobank RAP to reproduce our analysis.
 ## Installation and Setup
 First, clone the GitHub repo:
 ```
