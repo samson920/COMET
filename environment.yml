@@ -1,4 +1,4 @@
-name: multi_modal_DL
+name: COMET
 channels:
   - anaconda
   - pytorch
@@ -174,7 +174,7 @@ dependencies:
   - notebook-shim=0.2.0=pyhd8ed1ab_0
   - nspr=4.33=h295c915_0
   - nss=3.78=h2350873_0
-  - numpy-base=1.23.3=py310h8e6c178_0
+  - numpy-base=1.23.3
   - openh264=2.3.1=h27087fc_1
   - openssl=1.1.1w=hd590300_0
   - p11-kit=0.24.1=hc5aa10d_0
